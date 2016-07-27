@@ -6,15 +6,14 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            AJS
+tagline:          'The Digital Home of Aaron James Smith'
+description:      ''
+url:              http://slapula.github.io
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Aaron Smith'
 
 paginate:         5
 
@@ -23,7 +22,7 @@ version:          2.1.0
 gems:             [jekyll-paginate]
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/slapula
 
 kramdown:
   input:          GFM
