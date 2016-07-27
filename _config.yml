@@ -10,7 +10,7 @@ title:            AJS
 tagline:          'The Digital Home of Aaron James Smith'
 description:      'The Digital Home of Aaron James Smith'
 url:              http://slapula.github.io
-baseurl:          /
+baseurl:          /slapula
 
 author:
   name:           'Aaron Smith'
