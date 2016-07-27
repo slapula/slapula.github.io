@@ -24,5 +24,7 @@ gems:             [jekyll-paginate]
 github:
   repo:           https://github.com/slapula
 
+linkedin:         https://www.linkedin.com/in/aaron-smith-1661a95
+
 kramdown:
   input:          GFM
