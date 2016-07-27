@@ -6,9 +6,9 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            AJS
+title:            SMITHBOT
 tagline:          'The Digital Home of Aaron James Smith'
-description:      ''
+description:      'The Digital Home of Aaron James Smith'
 url:              http://slapula.github.io
 baseurl:          /
 

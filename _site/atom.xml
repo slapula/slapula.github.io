@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>AJS</title>
+ <title>SMITHBOT</title>
  <link href="http://slapula.github.io/atom.xml" rel="self"/>
  <link href="http://slapula.github.io/"/>
- <updated>2016-07-27T11:17:51-05:00</updated>
+ <updated>2016-07-27T13:10:22-05:00</updated>
  <id>http://slapula.github.io</id>
  <author>
    <name>Aaron Smith</name>
