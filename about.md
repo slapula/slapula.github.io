@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-![Aaron]({{ site.baseurl }}/assets/images/me.jpeg){:class="img-responsive"}
+![Aaron]({{ site.baseurl }}assets/images/me.jpeg){:class="img-responsive"}
 
 <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
