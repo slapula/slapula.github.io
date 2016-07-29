@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-![Aaron](/assets/images/me.jpeg){:class="img-responsive"}
+![Aaron](/assets/images/other/me.jpeg){:class="img-responsive"}
 
 My name is Aaron and I live in Chicago.  I also drink too much excellent coffee.
 I currently work for an awesome company called Civis Analytics where I do the
