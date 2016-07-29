@@ -5,6 +5,10 @@ title: About
 
 ![Aaron](/assets/images/me.jpeg){:class="img-responsive"}
 
+My name is Aaron and I live in Chicago.  I also drink too much excellent coffee.
+I currently work for an awesome company called Civis Analytics where I do the
+"Devops".
+
 Topics I'll be posting about:
 
 * Linux
