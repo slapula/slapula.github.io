@@ -7,7 +7,11 @@ title: About
 
 My name is Aaron and I live in Chicago.  I also drink too much excellent coffee.
 I currently work for an awesome company called Civis Analytics where I do the
-"Devops".
+"Devops".  
+
+My intention for this blog is to document things I learn in my day-to-day travels.
+Or a public notebook for things I'd rather not devote brain space to.
+
 
 Topics I'll be posting about:
 

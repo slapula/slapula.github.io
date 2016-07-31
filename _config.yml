@@ -19,7 +19,7 @@ paginate:         5
 
 # Custom vars
 version:          2.1.0
-gems:             [jekyll-paginate, jekyll-gallery-generator]
+gems:             [jekyll-paginate]
 
 github:
   repo:           https://github.com/slapula
@@ -29,5 +29,4 @@ linkedin:         https://www.linkedin.com/in/aaron-smith-1661a95
 kramdown:
   input:          GFM
 
-gallery:
-  dir: assets/images
+slider_array:     []
