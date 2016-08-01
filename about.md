@@ -3,13 +3,17 @@ layout: page
 title: About
 ---
 
+<p class="message">
+  "Don't quote me on that." -- Aaron
+</p>
+
 My name is Aaron and I live in Chicago.  I also drink too much excellent coffee.  I currently work for an awesome company called Civis Analytics where I do the "Devops".
 
 My intention for this blog is to document things I learn in my professional day-to-day travels.  It will mostly be a notebook for instructions, HOWTOs, and tips that I find useful.  In documenting these things here, I hope that it will help reinforce the learning process and possibly assist others by having the knowledge shared publicly.
 
 You will also notice on my sidebar that I have a link to photo galleries. I will also be featuring street photography from my personal collection. These images will mostly feature Chicago but you may see galleries for other places at a later date.
 
-Topics I'll be posting about:
+### Topics
 
 * Linux
 * AWS
