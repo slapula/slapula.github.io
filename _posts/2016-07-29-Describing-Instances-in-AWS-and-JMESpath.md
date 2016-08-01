@@ -7,7 +7,7 @@ Now that I'm digging into AWS for my new job, I've been up to my neck in JSON.  
 
 ### Simple Extraction
 
-Here is a simple example where I am loading the JSON data then extracting names:
+Here is a simple example in the Python console where I am loading the JSON data then extracting names:
 
 ```p
 >>> import jmespath
