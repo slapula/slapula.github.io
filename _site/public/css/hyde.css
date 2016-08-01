@@ -91,6 +91,20 @@ html {
   display: block;
   line-height: 1.75;
 }
+.sidebar-nav-item-head {
+  display: block;
+  line-height: 1.75;
+}
+
+.sidebar-nav-item-tail {
+    font-size: 15px;
+    display: none;
+}
+
+ul {
+    margin: 5px 0;
+}
+
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: underline;
@@ -247,4 +261,16 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+/* Other */
+
+.about_content {
+    width: 38rem;
+    overflow: hidden;
+}
+
+.about_content img {
+    margin-right: 10px;
+    float: left;
 }

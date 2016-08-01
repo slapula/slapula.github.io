@@ -262,3 +262,15 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/* Other */
+
+.about_content {
+    width: 38rem;
+    overflow: hidden;
+}
+
+.about_content img {
+    margin-right: 10px;
+    float: left;
+}

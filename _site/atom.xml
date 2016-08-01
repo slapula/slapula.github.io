@@ -4,13 +4,24 @@
  <title>AJS</title>
  <link href="http://slapula.github.io/atom.xml" rel="self"/>
  <link href="http://slapula.github.io/"/>
- <updated>2016-07-27T14:32:23-05:00</updated>
+ <updated>2016-07-31T19:13:36-05:00</updated>
  <id>http://slapula.github.io</id>
  <author>
    <name>Aaron Smith</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Describing Instances in AWS and JMESpath</title>
+   <link href="http://slapula.github.io/2016/07/29/Describing-Instances-in-AWS-and-JMESpath/"/>
+   <updated>2016-07-29T00:00:00-05:00</updated>
+   <id>http://slapula.github.io/2016/07/29/Describing-Instances-in-AWS-and-JMESpath</id>
+   <content type="html">&lt;p&gt;Now that I’m digging into AWS for my new job, I’ve been up to my neck in JSON.  I wouldn’t say I’m annoyed yet but trying to search and grab data from Describe outputs is becoming a hassle. Enter &lt;a href=&quot;http://jmespath.org/&quot;&gt;JMESpath&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Introducing Hyde</title>
