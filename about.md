@@ -22,8 +22,3 @@ You will also notice on my sidebar that I have a link to photo galleries. I will
 * Devops Methodology
 * Certifications (Red Hat & AWS)
 * Personal Projects
-
-
-<p class="message">
-  "Don't quote me on that." -- Aaron
-</p>
