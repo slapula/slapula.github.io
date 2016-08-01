@@ -93,11 +93,11 @@ html {
 }
 .sidebar-nav-item-head {
   display: block;
-  line-height: 1.75;
+  line-height: 1.50;
 }
 
 .sidebar-nav-item-tail {
-    font-size: 15px;
+    font-size: 17px;
     display: none;
 }
 
