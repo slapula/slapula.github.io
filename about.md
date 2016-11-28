@@ -4,21 +4,17 @@ title: About
 ---
 
 <p class="message">
-  "Don't quote me on that." -- Aaron
+  "If you want to understand your mind, sit down and observe it."
+  <br>-- Anagarika Munindra
 </p>
 
-My name is Aaron and I live in Chicago.  I also drink too much excellent coffee.  I currently work for an awesome company called Civis Analytics where I do the "Devops".
+<div class="about_content">
+    <p>My name is Aaron and I live in Chicago.  I also drink too much excellent coffee.  I currently work for an awesome company called Civis Analytics where I do the "Devops".</p>
 
-My intention for this blog is to document things I learn in my professional day-to-day travels.  It will mostly be a notebook for instructions, HOWTOs, and tips that I find useful.  In documenting these things here, I hope that it will help reinforce the learning process and possibly assist others by having the knowledge shared publicly.
+    <p>My intention for this blog is to document things I learn in my day-to-day travels and how I can apply the lessons learned through studying Buddhism.</p>
+</div>
+Books I'm currently reading:
 
-You will also notice on my sidebar that I have a link to photo galleries. I will also be featuring street photography from my personal collection. These images will mostly feature Chicago but you may see galleries for other places at a later date.
-
-### Topics
-
-* Linux
-* AWS
-* Configuration Management
-* Ruby and Python Scripting
-* Devops Methodology
-* Certifications (Red Hat & AWS)
-* Personal Projects
+* ["Buddhism for Beginners"](https://www.amazon.com/Buddhism-Beginners-Thubten-Chodron/dp/1559391537/ref=sr_1_1?ie=UTF8&qid=1480368276&sr=8-1&keywords=buddhism+for+beginners) by Thubten Chodron
+* ["Mindfulness: A Practical Guide to Awakening"](https://www.amazon.com/Mindfulness-Practical-Awakening-Joseph-Goldstein-ebook/dp/B00FYYXT9G/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1480368303&sr=8-9) by Joseph Goldstein
+* ["Life's Meandering Path: A Secular Approach to Guatama Buddha's Guide to Living"](https://www.amazon.com/Lifes-Meandering-Path-Secular-Approach/dp/1500618942/ref=sr_1_1?ie=UTF8&qid=1480368350&sr=8-1&keywords=life%27s+meandering+path) by Karma Yeshe Rabgye

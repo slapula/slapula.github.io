@@ -26,15 +26,6 @@
         {% endif %}
       {% endfor %}
 
-      <a class="sidebar-nav-item-head">Gallery</a>
-      {% for node in pages_list %}
-        {% if node.layout == "gallery" %}
-          <ul>
-              <a class="sidebar-nav-item-tail{% if gallery.url == node.url %} active{% endif %}" href="{{ node.url }}">‌{{ node.title }}</a>
-          </ul>
-        {% endif %}
-      {% endfor %}
-
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub</a>
       <a class="sidebar-nav-item" href="{{ site.linkedin }}">LinkedIn</a>
     </nav>
