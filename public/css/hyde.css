@@ -79,7 +79,6 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
   font-size: 3.25rem;
 }
 
@@ -93,11 +92,11 @@ html {
 }
 .sidebar-nav-item-head {
   display: block;
-  line-height: 1.75;
+  line-height: 1.50;
 }
 
 .sidebar-nav-item-tail {
-    font-size: 15px;
+    font-size: 17px;
     display: none;
 }
 
@@ -264,13 +263,3 @@ a.sidebar-nav-item:focus {
 }
 
 /* Other */
-
-.about_content {
-    width: 38rem;
-    overflow: hidden;
-}
-
-.about_content img {
-    margin-right: 10px;
-    float: left;
-}
