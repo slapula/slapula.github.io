@@ -8006,7 +8006,7 @@ return jQuery;
 </head>
 
 
-  <body class="layout-reverse">
+  <body class="theme-base-09">
 
     <div class="sidebar">
   <div class="container sidebar-sticky">
@@ -8051,29 +8051,6 @@ return jQuery;
         
       
 
-      <a class="sidebar-nav-item-head">Gallery</a>
-      
-        
-      
-        
-      
-        
-      
-        
-          <ul>
-              <a class="sidebar-nav-item-tail" href="/chicago/">└ Chicago</a>
-          </ul>
-        
-      
-        
-      
-        
-          <ul>
-              <a class="sidebar-nav-item-tail" href="/test/">└ Test</a>
-          </ul>
-        
-      
-
       <a class="sidebar-nav-item" href="https://github.com/slapula">GitHub</a>
       <a class="sidebar-nav-item" href="https://www.linkedin.com/in/aaron-smith-1661a95">LinkedIn</a>
     </nav>
@@ -8095,9 +8072,45 @@ return jQuery;
 
     <span class="post-date">29 Jul 2016</span>
 
-    <p>Now that I’m digging into AWS for my new job, I’ve been up to my neck in JSON.  I wouldn’t say I’m annoyed yet but trying to search and grab data from Describe outputs is becoming a hassle. Enter <a href="http://jmespath.org/">JMESpath</a>.</p>
+    <p>Now that I’m digging into AWS for my new job, I’ve been up to my neck in JSON.  I wouldn’t say I’m annoyed yet but trying to search and grab data from Describe outputs is becoming a hassle. Enter <a href="http://jmespath.org/">JMESpath</a>.  JMESpath is the scalpel to use when you need to surgically remove key bits of data from large JSON outputs. For the following example, I will be using data generated using <a href="http://json-generator.com">JSON-Generator</a>.</p>
 
-<h3 id="built-on-poole">Built on Poole</h3>
+<h3 id="simple-extraction">Simple Extraction</h3>
+
+<p>Here is a simple example where I am loading the JSON data then extracting names:</p>
+
+<pre><code class="language-p">&gt;&gt;&gt; import jmespath
+&gt;&gt;&gt; from subprocess import call
+&gt;&gt;&gt; call(["head", "-15", "random_stuff.json"])
+[
+  {
+    "id": "579f8628aaef83cbbbf73384",
+    "index": 0,
+    "guid": "5c739ce1-a555-4578-a611-3cf679001564",
+    "isActive": true,
+    "balance": "$3,747.11",
+    "picture": "http://placehold.it/32x32",
+    "age": 34,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Cornelia",
+      "last": "Edwards"
+    },
+    "company": "MEGALL",
+0
+&gt;&gt;&gt; fileobj = open('random_stuff.json', 'r')
+&gt;&gt;&gt; import json
+&gt;&gt;&gt; rando_json = json.load(fileobj)
+&gt;&gt;&gt; jmespath.search("[0].name.first", rando_json)
+u'Cornelia'
+&gt;&gt;&gt; jmespath.search("[].name.first", rando_json)
+[u'Cornelia', u'Fern', u'Reyna', u'Thomas', u'Delacruz', u'Clayton', u'Nola']
+&gt;&gt;&gt; jmespath.search("[].name.[first,last]", rando_json)
+[[u'Cornelia', u'Edwards'], [u'Fern', u'Fisher'], [u'Reyna', u'Crawford'], [u'Thomas', u'Sims'], [u'Delacruz', u'Owens'], [u'Clayton', u'Robertson'], [u'Nola', u'Lott']]
+</code></pre>
+
+<h3 id="going-further">Going further</h3>
+
+<p>If you are new to JMESpath (like I am), I highly recommend going through the official <a href="http://jmespath.org/tutorial.html">tutorial</a> just to get familiar with how the language works.  It’s pretty simple to get started and shouldn’t take you too much time to get comfortable with.  One thing I’m learning is that your experience with JMESpath will only really depend on the quality of JSON you are digging through.  Luckily, AWS is okay in that regard.</p>
 
   </div>
   

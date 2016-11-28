@@ -41,6 +41,15 @@ __Management Tools__:
 
 __Elastic Compute Cloud (EC2)__: A web service that provides adjustable compute resources (think hypervisor for AWS virtual machines).
 
+*Benefits*
+* Designed to be highly scalable
+* Completely controlled by the user
+* Vendor neutral
+* Integrated well with the other AWS services
+* Highly reliable
+* Secure
+* Inexpensive (available as on-demand, reserved, or spot instances)
+
 __Elastic Load Balancing (ELB)__:
 
 __AWS Lambda__:

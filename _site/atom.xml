@@ -4,7 +4,7 @@
  <title>AJS</title>
  <link href="http://slapula.github.io/atom.xml" rel="self"/>
  <link href="http://slapula.github.io/"/>
- <updated>2016-07-31T19:13:36-05:00</updated>
+ <updated>2016-11-28T15:52:43-06:00</updated>
  <id>http://slapula.github.io</id>
  <author>
    <name>Aaron Smith</name>
@@ -17,9 +17,45 @@
    <link href="http://slapula.github.io/2016/07/29/Describing-Instances-in-AWS-and-JMESpath/"/>
    <updated>2016-07-29T00:00:00-05:00</updated>
    <id>http://slapula.github.io/2016/07/29/Describing-Instances-in-AWS-and-JMESpath</id>
-   <content type="html">&lt;p&gt;Now that I’m digging into AWS for my new job, I’ve been up to my neck in JSON.  I wouldn’t say I’m annoyed yet but trying to search and grab data from Describe outputs is becoming a hassle. Enter &lt;a href=&quot;http://jmespath.org/&quot;&gt;JMESpath&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Now that I’m digging into AWS for my new job, I’ve been up to my neck in JSON.  I wouldn’t say I’m annoyed yet but trying to search and grab data from Describe outputs is becoming a hassle. Enter &lt;a href=&quot;http://jmespath.org/&quot;&gt;JMESpath&lt;/a&gt;.  JMESpath is the scalpel to use when you need to surgically remove key bits of data from large JSON outputs. For the following example, I will be using data generated using &lt;a href=&quot;http://json-generator.com&quot;&gt;JSON-Generator&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
+&lt;h3 id=&quot;simple-extraction&quot;&gt;Simple Extraction&lt;/h3&gt;
+
+&lt;p&gt;Here is a simple example where I am loading the JSON data then extracting names:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-p&quot;&gt;&amp;gt;&amp;gt;&amp;gt; import jmespath
+&amp;gt;&amp;gt;&amp;gt; from subprocess import call
+&amp;gt;&amp;gt;&amp;gt; call([&quot;head&quot;, &quot;-15&quot;, &quot;random_stuff.json&quot;])
+[
+  {
+    &quot;id&quot;: &quot;579f8628aaef83cbbbf73384&quot;,
+    &quot;index&quot;: 0,
+    &quot;guid&quot;: &quot;5c739ce1-a555-4578-a611-3cf679001564&quot;,
+    &quot;isActive&quot;: true,
+    &quot;balance&quot;: &quot;$3,747.11&quot;,
+    &quot;picture&quot;: &quot;http://placehold.it/32x32&quot;,
+    &quot;age&quot;: 34,
+    &quot;eyeColor&quot;: &quot;blue&quot;,
+    &quot;name&quot;: {
+      &quot;first&quot;: &quot;Cornelia&quot;,
+      &quot;last&quot;: &quot;Edwards&quot;
+    },
+    &quot;company&quot;: &quot;MEGALL&quot;,
+0
+&amp;gt;&amp;gt;&amp;gt; fileobj = open(&#39;random_stuff.json&#39;, &#39;r&#39;)
+&amp;gt;&amp;gt;&amp;gt; import json
+&amp;gt;&amp;gt;&amp;gt; rando_json = json.load(fileobj)
+&amp;gt;&amp;gt;&amp;gt; jmespath.search(&quot;[0].name.first&quot;, rando_json)
+u&#39;Cornelia&#39;
+&amp;gt;&amp;gt;&amp;gt; jmespath.search(&quot;[].name.first&quot;, rando_json)
+[u&#39;Cornelia&#39;, u&#39;Fern&#39;, u&#39;Reyna&#39;, u&#39;Thomas&#39;, u&#39;Delacruz&#39;, u&#39;Clayton&#39;, u&#39;Nola&#39;]
+&amp;gt;&amp;gt;&amp;gt; jmespath.search(&quot;[].name.[first,last]&quot;, rando_json)
+[[u&#39;Cornelia&#39;, u&#39;Edwards&#39;], [u&#39;Fern&#39;, u&#39;Fisher&#39;], [u&#39;Reyna&#39;, u&#39;Crawford&#39;], [u&#39;Thomas&#39;, u&#39;Sims&#39;], [u&#39;Delacruz&#39;, u&#39;Owens&#39;], [u&#39;Clayton&#39;, u&#39;Robertson&#39;], [u&#39;Nola&#39;, u&#39;Lott&#39;]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;going-further&quot;&gt;Going further&lt;/h3&gt;
+
+&lt;p&gt;If you are new to JMESpath (like I am), I highly recommend going through the official &lt;a href=&quot;http://jmespath.org/tutorial.html&quot;&gt;tutorial&lt;/a&gt; just to get familiar with how the language works.  It’s pretty simple to get started and shouldn’t take you too much time to get comfortable with.  One thing I’m learning is that your experience with JMESpath will only really depend on the quality of JSON you are digging through.  Luckily, AWS is okay in that regard.&lt;/p&gt;
 </content>
  </entry>
  
